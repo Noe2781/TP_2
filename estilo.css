@@ -1,0 +1,39 @@
+p {
+    font-size: 36px; /* Puedes ajustar este valor según tus preferencias */
+}
+
+div.col-div{
+background-color: #EEDA36;
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px 50px;
+ }
+
+ body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.full-width {
+    width: 100%; /* 100% del ancho de la ventana */
+    height: 100%; /* 100% del alto de la ventana */
+    display: flex;
+}
+
+.col-div {
+    flex: 1; /* Hace que ambos div ocupen el mismo espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+#img {
+    width: 100%; /* Ocupa el 100% del ancho del div */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable con Registro</title>
+    <!-- Incluye la biblioteca Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Travel & Rock</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Botón para mostrar los datos de la empresa -->
+                        <button class="nav-link btn btn-link" data-bs-toggle="collapse" data-bs-target="#empresaCollapse">Contacto</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registroModal">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de Datos de la Empresa y Redes Sociales -->
+    <div class="collapse" id="empresaCollapse">
+        <div class="container mt-4">
+            <h1>Datos de la Empresa</h1>
+            <p>contactanos</p>
+            <ul>
+                <li>Travel & Rock</li>
+                <li>Dirección: avenida argentina 987</li>
+                <li>Teléfono: 1137569867</li>
+            </ul>
+            <p>Redes Sociales:</p>
+            <a href="https://www.facebook.com/miempresa" target="_blank" class="btn btn-primary">Facebook</a>
+            <a href="https://twitter.com/miempresa" target="_blank" class="btn btn-info">Twitter</a>
+            <a href="https://www.linkedin.com/company/miempresa" target="_blank" class="btn btn-primary">LinkedIn</a>
+            <a href="https://www.instagram.com/miempresa" target="_blank" class="btn btn-danger">Instagram</a>
+        </div>
+    </div>
+
+    <!-- Modal de Registro -->
+    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registroModalLabel">Registra tu cuenta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Aquí puedes agregar un formulario de registro con campos para Contraseña y Confirmar Contraseña -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Correo Electrónico">
+                        </div>
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Nombre de Usuario</label>
+                            <input type="text" class="form-control" id="usuario" placeholder="Nombre de Usuario">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contrasena" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasena" placeholder="Contraseña">
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmarContrasena" class="form-label">Confirmar Contraseña</label>
+                            <input type="password" class="form-control" id="confirmarContrasena" placeholder="Confirmar Contraseña">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-width">
+        <div class="col-div">
+            <!-- Contenido del primer div (izquierda) -->
+            <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcpvohmS39fMAjIUbN05-BPU24z_6gk5iurw&usqp=CAU" alt="">
+        </div>
+        <div class="col-div">
+            <!-- Contenido del segundo div (derecha) -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0f8Vkj9on8aw7SJulR6Xlz4l9e1v0gefMolXoqDQ8olZY6K23J39ziQOx1w_EqZS6-6U&usqp=CAU" alt="">
+            <p>Ya no esperes que tu artista favorito visite tu pais</p>
+            <p>Travel & Rock te acerca al concierto que quieras</p>
+            <p>en varios puntos del mundo</p>
+        </div>
+                   
+    </div>              
+        </div>
+    </div>
+
+
+    <!-- Incluye la biblioteca Bootstrap JavaScript y jQuery (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
